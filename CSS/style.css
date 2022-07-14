@@ -1,0 +1,364 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(15, 14, 14);
+  color: white;
+  text-transform: capitalize;
+}
+li {
+  list-style: none !important;
+}
+p {
+  letter-spacing: 1px;
+}
+hr {
+  color: rgb(221, 219, 219);
+  background-color: #e1e6e6;
+}
+a {
+  text-decoration: none !important;
+  color: #e1e6e6;
+}
+a:hover{
+  color: rgb(3, 194, 3) !important;
+}
+.top {
+  position: fixed;
+
+  right: 34px;
+  bottom: 26px;
+  color: black;
+  border: none;
+  z-index: 10;
+}
+.top1 {
+  background: none;
+  border: none;
+  outline: none;
+}
+h1,
+h2 {
+  padding: 0;
+
+  margin-bottom: 1rem;
+}
+.mm {
+  color: rgb(8, 245, 28);
+}
+/* -----------------------------------navigation------------------------------------------------------- */
+label {
+  color: black;
+}
+nav {
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 15px 0px 15px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  z-index: 10;
+}
+nav ul li {
+  margin: 0px 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.main2 {
+  background-color: #e6f2b5 !important;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  /* background-color: #f2f8f7; */
+  color: rgb(8, 245, 28);
+  transition: 0.7s;
+  text-decoration: none;
+}
+nav .logo {
+  font-size: 33px;
+  color: white !important;
+  font-weight: 600;
+  font-family: "Tillana", cursive;
+}
+.menu-btn {
+  display: none;
+}
+#click {
+  display: none !important;
+}
+
+#home-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#bottom {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+  background-position: center !important;
+  background-size: cover;
+
+  width: 100%;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.title-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 3rem;
+}
+.cvbtn {
+  display: flex;
+  justify-content: center;
+}
+.cvbtn input {
+  padding: 8px;
+  width: 8rem;
+  background-color: rgb(8, 245, 28);
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  margin: 4px;
+}
+.name1 {
+  display: flex;
+  justify-content: center;
+  /* padding-right: 5rem; */
+}
+/* ------------------------------------media------------------------------------------------------------------ */
+@media (max-width: 900px) {
+  nav {
+    background-color: rgb(15, 15, 15);
+    /* scroll-behavior: none; */
+    padding-left: 40px;
+    padding-bottom: 12px;
+
+    /* position: fixed; */
+  }
+  .menu {
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    background: rgb(8, 8, 8);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  .logo {
+    padding-left: 0px;
+    margin-left: -25px;
+  }
+  .active1 {
+    /* position: fixed; */
+    left: 0;
+    /* top: 64px; */
+  }
+  .active2 {
+    position: fixed;
+    top: 64px;
+    left: -100%;
+    background: rgb(8, 8, 8);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  ul li {
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+  }
+  nav ul li {
+    margin: 30px 0px;
+  }
+  nav ul li a {
+    font-size: 21px;
+    display: block;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: rgb(8, 245, 28);
+    transition: 0.7s;
+  }
+  .menu-btn {
+    font-size: 29px;
+    color: #f5f8f8;
+    display: block;
+
+    padding: 0px;
+  }
+  .box {
+    margin: 2rem !important;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+}
+/* ......................about............... */
+#about {
+  /* height: 90vh; */
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-bottom: 4px solid rgb(8, 245, 28);
+  border-top: 6px solid rgb(8, 245, 28);
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.box {
+  border: 1px solid rgb(0, 255, 21);
+  text-align: center;
+  padding: 1rem;
+  height: 10rem;
+}
+.box:hover {
+  border: white;
+  background-color: green;
+}
+.fas {
+  color: white;
+  font-size: 4rem;
+}
+.fab {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.icon {
+  text-align: center;
+  line-height: 0.1rem !important;
+}
+/* ----------------skiss styling start here------------------------ */
+#skillpage {
+  /* height: 70vh; */
+}
+.skill-bar {
+  width: 100%;
+  height: 16px;
+  background-color: rgba(179, 175, 170, 0.459);
+  margin-bottom: 40px;
+}
+.skill {
+  width: 70%;
+  background-color: rgb(8, 245, 28);
+  padding: 8px;
+}
+.skill-name p {
+  position: relative;
+  float: right;
+  top: -30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+/* -----------------------------education styling start here--------------------------- */
+.uleducation {
+  border-left: 3px solid rgb(8, 245, 28);
+  padding: 14px;
+  /* margin-left: 20px; */
+}
+.uleducation h1 {
+  font-size: 25px;
+
+  color: rgb(8, 245, 28);
+}
+.uleducation span {
+  border: 2px rgb(8, 245, 28);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  left: 9px;
+  margin-top: 8px;
+}
+.college {
+  background-color: rgb(8, 245, 28);
+  width: 115px;
+  color: black;
+  padding-left: 15px;
+ 
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 15px;
+}
+.menu-right ul {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+/* ----------------projects styling------------- */
+#projects {
+  /* height: 100vh; */
+}
+.project-img {
+  text-align: center;
+  padding: 1rem;
+}
+.project-img:hover {
+  border: 1px solid rgb(13, 213, 6);
+}
+.project-img img {
+  width: 100%;
+}
+/* ------------------------------------ */
+.personal {
+  color: rgb(14, 199, 14);
+  font-weight: bold;
+}
+.about-hobbies {
+  display: flex;
+}
+.about-hobbies p {
+  background-color: rgb(15, 243, 15);
+  color: black;
+  margin: 4px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.row
+{
+  margin-bottom: 2rem !important;
+}
